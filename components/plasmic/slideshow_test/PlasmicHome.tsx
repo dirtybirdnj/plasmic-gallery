@@ -36,11 +36,7 @@ import {
 } from "@plasmicapp/react-web";
 import Header from "../../Header"; // plasmic-import: U_DMo2bvuDbKZ/component
 import Section from "../../Section"; // plasmic-import: 45udksdekvZQSR/component
-import Button from "../../Button"; // plasmic-import: wcLr5_2PVsVByX/component
 import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
-import FeatureCard from "../../FeatureCard"; // plasmic-import: 1lik8XPnzNFi-/component
-import Testimonial from "../../Testimonial"; // plasmic-import: gFRCq2hTeBSgLQ/component
-import HomeCta from "../../HomeCta"; // plasmic-import: r-nv1YUgcYmQy/component
 import Footer from "../../Footer"; // plasmic-import: TyeYjWzjjRVnC/component
 
 import { useScreenVariants as useScreenVariants_9IzRl7Ttvrws2S } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: 9IzRl7ttvrws2s/globalVariant
@@ -50,20 +46,6 @@ import "@plasmicapp/react-web/lib/plasmic.css";
 import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_type/plasmic_library_plasmic_color_type.module.css"; // plasmic-import: seaQhLVS4bbjiGvJJrRwyL/projectcss
 import projectcss from "./plasmic_slideshow_test.module.css"; // plasmic-import: qv6zis9xDhh6tqcrgni3fx/projectcss
 import sty from "./PlasmicHome.module.css"; // plasmic-import: Dns-SjFIQm40c/css
-
-import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: 9_4SYWr-20UnXe/icon
-import RightArrowIcon from "./icons/PlasmicIcon__RightArrow"; // plasmic-import: aNGH81Z5dw-kgi/icon
-import LightningIcon from "./icons/PlasmicIcon__Lightning"; // plasmic-import: iD8JbYzOeyGRPF/icon
-import HammerIcon from "./icons/PlasmicIcon__Hammer"; // plasmic-import: pQQ_VNk2IhVhu-/icon
-import PencilIcon from "./icons/PlasmicIcon__Pencil"; // plasmic-import: eIbhq09lIfoRXD/icon
-import SwapIcon from "./icons/PlasmicIcon__Swap"; // plasmic-import: Wq1AhFY_wGmAq2/icon
-import SlotIcon from "./icons/PlasmicIcon__Slot"; // plasmic-import: e0Fzvf0D_SFN2e/icon
-import CycleIcon from "./icons/PlasmicIcon__Cycle"; // plasmic-import: HH3wr0-j0z0xH_/icon
-import FacebookLogoIcon from "./icons/PlasmicIcon__FacebookLogo"; // plasmic-import: kPYcfUZAlq76MA/icon
-import TinderLogoIcon from "./icons/PlasmicIcon__TinderLogo"; // plasmic-import: 4TJa3d_yuKFgzf/icon
-import AirbnbLogoIcon from "./icons/PlasmicIcon__AirbnbLogo"; // plasmic-import: iESmOIT4Tfhq-j/icon
-import HubspotLogoIcon from "./icons/PlasmicIcon__HubspotLogo"; // plasmic-import: Y7cwhhvv3FJXfG/icon
-import AmazonLogoIcon from "./icons/PlasmicIcon__AmazonLogo"; // plasmic-import: gvBBONVnELSBX1/icon
 
 export type PlasmicHome__VariantMembers = {};
 
@@ -80,12 +62,6 @@ export type PlasmicHome__OverridesType = {
   header?: p.Flex<typeof Header>;
   topSection?: p.Flex<typeof Section>;
   slider?: p.Flex<typeof Slider>;
-  solutions?: p.Flex<typeof Section>;
-  columns?: p.Flex<"div">;
-  howItWorks?: p.Flex<typeof Section>;
-  validation?: p.Flex<typeof Section>;
-  testimonial?: p.Flex<typeof Testimonial>;
-  homeCta?: p.Flex<typeof HomeCta>;
   footer?: p.Flex<typeof Footer>;
 };
 
@@ -149,72 +125,6 @@ function PlasmicHome__RenderFunc(props: {
               hasGap={true}
               className={classNames(projectcss.all, sty.freeBox__dcQqd)}
             >
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__fub9H)}
-              >
-                <div className={classNames(projectcss.all, sty.freeBox__yMdF)}>
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___0CWn7
-                    )}
-                  >
-                    {"Make your website"}
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__yExHj
-                    )}
-                  >
-                    {"wonderful"}
-                  </div>
-                </div>
-
-                <div
-                  className={classNames(
-                    projectcss.all,
-                    projectcss.__wab_text,
-                    sty.text___8QroK
-                  )}
-                >
-                  {
-                    "Our landing page template works on all devices, so you only have to set it up once, and get beautiful results forever."
-                  }
-                </div>
-              </p.Stack>
-
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__b0VJr)}
-              >
-                <Button
-                  className={classNames("__wab_instance", sty.button__iOuOx)}
-                  color={"blue" as const}
-                  endIcon={
-                    <RightArrowIcon
-                      className={classNames(projectcss.all, sty.svg__sr1Dj)}
-                      role={"img"}
-                    />
-                  }
-                  showEndIcon={true}
-                >
-                  {"Start free trial"}
-                </Button>
-
-                <Button
-                  className={classNames("__wab_instance", sty.button__p7O1Q)}
-                >
-                  {"Learn more"}
-                </Button>
-              </p.Stack>
-
               <div className={classNames(projectcss.all, sty.freeBox__hqt1E)}>
                 <Slider
                   data-plasmic-name={"slider"}
@@ -224,7 +134,7 @@ function PlasmicHome__RenderFunc(props: {
                 >
                   <p.PlasmicImg
                     alt={""}
-                    className={classNames(sty.img__jzgha)}
+                    className={classNames(sty.img__zK4Na)}
                     displayHeight={"auto" as const}
                     displayMaxHeight={"none" as const}
                     displayMaxWidth={"100%" as const}
@@ -277,306 +187,6 @@ function PlasmicHome__RenderFunc(props: {
             </p.Stack>
           </Section>
 
-          <Section
-            data-plasmic-name={"solutions"}
-            data-plasmic-override={overrides.solutions}
-            className={classNames("__wab_instance", sty.solutions)}
-            hasSubtitle={true}
-            hasTitle={true}
-            subtitle={
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
-            }
-            title={"Explore the solutions"}
-          >
-            <p.Stack
-              as={"div"}
-              data-plasmic-name={"columns"}
-              data-plasmic-override={overrides.columns}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns)}
-            >
-              <div className={classNames(projectcss.all, sty.column__kJiuz)}>
-                <p.Stack
-                  as={"div"}
-                  hasGap={true}
-                  className={classNames(projectcss.all, sty.freeBox___35Kq)}
-                >
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text__huu7F
-                    )}
-                  >
-                    {"Powerful suite of tools"}
-                  </div>
-
-                  <div
-                    className={classNames(
-                      projectcss.all,
-                      projectcss.__wab_text,
-                      sty.text___8IvcF
-                    )}
-                  >
-                    {
-                      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa."
-                    }
-                  </div>
-
-                  <FeatureCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.featureCard__hznAj
-                    )}
-                    description={
-                      "Taking collaboration to the next level with security and administrative features built for teams"
-                    }
-                    iconBack={
-                      <LightningIcon
-                        className={classNames(projectcss.all, sty.svg__sjfT1)}
-                        role={"img"}
-                      />
-                    }
-                    long={true}
-                    title={"Building the Simple ecosystem"}
-                  />
-
-                  <FeatureCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.featureCard__aW809
-                    )}
-                    description={
-                      "Taking collaboration to the next level with security and administrative features built for teams"
-                    }
-                    iconBack={
-                      <HammerIcon
-                        className={classNames(projectcss.all, sty.svg__iWlpX)}
-                        role={"img"}
-                      />
-                    }
-                    long={true}
-                    title={"Building the Simple Ecosystem"}
-                  />
-
-                  <FeatureCard
-                    className={classNames(
-                      "__wab_instance",
-                      sty.featureCard__aNbmS
-                    )}
-                    description={
-                      "Taking collaboration to the next level with security and administrative features built for teams"
-                    }
-                    iconBack={
-                      <PencilIcon
-                        className={classNames(projectcss.all, sty.svg__gbOcE)}
-                        role={"img"}
-                      />
-                    }
-                    long={true}
-                    title={"Building the Simple Ecosystem"}
-                  />
-                </p.Stack>
-              </div>
-
-              <div className={classNames(projectcss.all, sty.column__e9VTf)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__ssdDx)}
-                  displayHeight={"auto" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"none" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"100%" as const}
-                  src={{
-                    src: "/plasmic/slideshow_test/images/simpleProject.png",
-                    fullWidth: 1000,
-                    fullHeight: 924,
-                    aspectRatio: undefined
-                  }}
-                />
-              </div>
-            </p.Stack>
-          </Section>
-
-          <Section
-            data-plasmic-name={"howItWorks"}
-            data-plasmic-override={overrides.howItWorks}
-            className={classNames("__wab_instance", sty.howItWorks)}
-            color={"halfDark" as const}
-            hasSubtitle={true}
-            hasTitle={true}
-            subtitle={
-              "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
-            }
-            title={"How Simple works"}
-          >
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__su2Ma)}
-            >
-              <FeatureCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.featureCard___1IaxI
-                )}
-                description={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                }
-                iconFront={
-                  <SwapIcon
-                    className={classNames(projectcss.all, sty.svg___7X7Sw)}
-                    role={"img"}
-                  />
-                }
-                title={"Initial Contact"}
-              />
-
-              <FeatureCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.featureCard___9COdG
-                )}
-                description={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                }
-                iconFront={
-                  <SlotIcon
-                    className={classNames(projectcss.all, sty.svg__tUOrp)}
-                    role={"img"}
-                  />
-                }
-                title={"Discovery Session"}
-              />
-
-              <FeatureCard
-                className={classNames(
-                  "__wab_instance",
-                  sty.featureCard___4LruF
-                )}
-                description={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                }
-                iconFront={
-                  <CycleIcon
-                    className={classNames(projectcss.all, sty.svg__xqrfv)}
-                    role={"img"}
-                  />
-                }
-                title={"Contracting"}
-              />
-
-              <FeatureCard
-                className={classNames("__wab_instance", sty.featureCard__tRfgW)}
-                description={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                }
-                iconFront={
-                  <HammerIcon
-                    className={classNames(projectcss.all, sty.svg___39UrO)}
-                    role={"img"}
-                  />
-                }
-                title={"Fast Prototyping"}
-              />
-
-              <FeatureCard
-                className={classNames("__wab_instance", sty.featureCard__yA1Ld)}
-                description={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                }
-                iconFront={
-                  <PencilIcon
-                    className={classNames(projectcss.all, sty.svg__fBjnM)}
-                    role={"img"}
-                  />
-                }
-                title={"Design Phase"}
-              />
-
-              <FeatureCard
-                className={classNames("__wab_instance", sty.featureCard__ofMcr)}
-                description={
-                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-                }
-                iconFront={
-                  <LightningIcon
-                    className={classNames(projectcss.all, sty.svg__foVtt)}
-                    role={"img"}
-                  />
-                }
-                title={"Develop & Launch"}
-              />
-            </p.Stack>
-
-            {true ? (
-              <div className={classNames(projectcss.all, sty.freeBox__c3TgN)} />
-            ) : null}
-          </Section>
-
-          <Section
-            data-plasmic-name={"validation"}
-            data-plasmic-override={overrides.validation}
-            className={classNames("__wab_instance", sty.validation)}
-            hasSubtitle={true}
-            hasTitle={true}
-            subtitle={
-              "Arcu cursus vitae congue mauris rhoncus viverra nibh cras pulvinar mattis blandit libero cursus mattis."
-            }
-            title={"Trusted by over 20,000 companies all over the world"}
-          >
-            <p.Stack
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__a8Mxz)}
-            >
-              <p.Stack
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.freeBox__tfVxb)}
-              >
-                <FacebookLogoIcon
-                  className={classNames(projectcss.all, sty.svg__drtRf)}
-                  role={"img"}
-                />
-
-                <TinderLogoIcon
-                  className={classNames(projectcss.all, sty.svg__ok6P)}
-                  role={"img"}
-                />
-
-                <AirbnbLogoIcon
-                  className={classNames(projectcss.all, sty.svg__pofO8)}
-                  role={"img"}
-                />
-
-                <HubspotLogoIcon
-                  className={classNames(projectcss.all, sty.svg__syc5Q)}
-                  role={"img"}
-                />
-
-                <AmazonLogoIcon
-                  className={classNames(projectcss.all, sty.svg__nyZdm)}
-                  role={"img"}
-                />
-              </p.Stack>
-
-              <Testimonial
-                data-plasmic-name={"testimonial"}
-                data-plasmic-override={overrides.testimonial}
-                className={classNames("__wab_instance", sty.testimonial)}
-              />
-            </p.Stack>
-          </Section>
-
-          <HomeCta
-            data-plasmic-name={"homeCta"}
-            data-plasmic-override={overrides.homeCta}
-            className={classNames("__wab_instance", sty.homeCta)}
-          />
-
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}
@@ -589,28 +199,10 @@ function PlasmicHome__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: [
-    "root",
-    "header",
-    "topSection",
-    "slider",
-    "solutions",
-    "columns",
-    "howItWorks",
-    "validation",
-    "testimonial",
-    "homeCta",
-    "footer"
-  ],
+  root: ["root", "header", "topSection", "slider", "footer"],
   header: ["header"],
   topSection: ["topSection", "slider"],
   slider: ["slider"],
-  solutions: ["solutions", "columns"],
-  columns: ["columns"],
-  howItWorks: ["howItWorks"],
-  validation: ["validation", "testimonial"],
-  testimonial: ["testimonial"],
-  homeCta: ["homeCta"],
   footer: ["footer"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -621,12 +213,6 @@ type NodeDefaultElementType = {
   header: typeof Header;
   topSection: typeof Section;
   slider: typeof Slider;
-  solutions: typeof Section;
-  columns: "div";
-  howItWorks: typeof Section;
-  validation: typeof Section;
-  testimonial: typeof Testimonial;
-  homeCta: typeof HomeCta;
   footer: typeof Footer;
 };
 
@@ -690,12 +276,6 @@ export const PlasmicHome = Object.assign(
     header: makeNodeComponent("header"),
     topSection: makeNodeComponent("topSection"),
     slider: makeNodeComponent("slider"),
-    solutions: makeNodeComponent("solutions"),
-    columns: makeNodeComponent("columns"),
-    howItWorks: makeNodeComponent("howItWorks"),
-    validation: makeNodeComponent("validation"),
-    testimonial: makeNodeComponent("testimonial"),
-    homeCta: makeNodeComponent("homeCta"),
     footer: makeNodeComponent("footer"),
 
     // Metadata about props expected for PlasmicHome

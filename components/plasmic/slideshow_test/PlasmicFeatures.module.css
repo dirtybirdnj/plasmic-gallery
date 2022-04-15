@@ -34,11 +34,10 @@
   padding: 30px;
 }
 .slider:global(.__wab_instance) {
-  width: 100%;
+  width: auto;
   max-width: 100%;
   flex-direction: column;
   position: relative;
-  min-width: 0;
 }
 .img__uo9VL {
   object-fit: cover;
