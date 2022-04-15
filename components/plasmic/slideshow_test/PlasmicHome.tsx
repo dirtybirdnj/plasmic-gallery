@@ -37,6 +37,7 @@ import {
 import Header from "../../Header"; // plasmic-import: U_DMo2bvuDbKZ/component
 import Section from "../../Section"; // plasmic-import: 45udksdekvZQSR/component
 import Button from "../../Button"; // plasmic-import: wcLr5_2PVsVByX/component
+import Slider from "react-slick"; // plasmic-import: HOQUyOpClJ/codeComponent
 import FeatureCard from "../../FeatureCard"; // plasmic-import: 1lik8XPnzNFi-/component
 import Testimonial from "../../Testimonial"; // plasmic-import: gFRCq2hTeBSgLQ/component
 import HomeCta from "../../HomeCta"; // plasmic-import: r-nv1YUgcYmQy/component
@@ -78,6 +79,7 @@ export type PlasmicHome__OverridesType = {
   root?: p.Flex<"div">;
   header?: p.Flex<typeof Header>;
   topSection?: p.Flex<typeof Section>;
+  slider?: p.Flex<typeof Slider>;
   solutions?: p.Flex<typeof Section>;
   columns?: p.Flex<"div">;
   howItWorks?: p.Flex<typeof Section>;
@@ -214,22 +216,63 @@ function PlasmicHome__RenderFunc(props: {
               </p.Stack>
 
               <div className={classNames(projectcss.all, sty.freeBox__hqt1E)}>
-                <p.PlasmicImg
-                  alt={""}
-                  className={classNames(sty.img__ckjW)}
-                  displayHeight={"100%" as const}
-                  displayMaxHeight={"none" as const}
-                  displayMaxWidth={"none" as const}
-                  displayMinHeight={"0" as const}
-                  displayMinWidth={"0" as const}
-                  displayWidth={"100%" as const}
-                  src={{
-                    src: "/plasmic/slideshow_test/images/heroImage.png",
-                    fullWidth: 1536,
-                    fullHeight: 864,
-                    aspectRatio: undefined
-                  }}
-                />
+                <Slider
+                  data-plasmic-name={"slider"}
+                  data-plasmic-override={overrides.slider}
+                  className={classNames("__wab_instance", sty.slider)}
+                  slidesPerRow={1 as const}
+                >
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__jzgha)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    src={{
+                      src: "/plasmic/slideshow_test/images/lop01Jpg.jpeg",
+                      fullWidth: 2400,
+                      fullHeight: 1600,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__dxKb)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    src={{
+                      src: "/plasmic/slideshow_test/images/lop02Jpg.jpeg",
+                      fullWidth: 2400,
+                      fullHeight: 1600,
+                      aspectRatio: undefined
+                    }}
+                  />
+
+                  <p.PlasmicImg
+                    alt={""}
+                    className={classNames(sty.img__jzKov)}
+                    displayHeight={"auto" as const}
+                    displayMaxHeight={"none" as const}
+                    displayMaxWidth={"100%" as const}
+                    displayMinHeight={"0" as const}
+                    displayMinWidth={"0" as const}
+                    displayWidth={"auto" as const}
+                    src={{
+                      src: "/plasmic/slideshow_test/images/lop03Jpg.jpeg",
+                      fullWidth: 2400,
+                      fullHeight: 1600,
+                      aspectRatio: undefined
+                    }}
+                  />
+                </Slider>
               </div>
             </p.Stack>
           </Section>
@@ -550,6 +593,7 @@ const PlasmicDescendants = {
     "root",
     "header",
     "topSection",
+    "slider",
     "solutions",
     "columns",
     "howItWorks",
@@ -559,7 +603,8 @@ const PlasmicDescendants = {
     "footer"
   ],
   header: ["header"],
-  topSection: ["topSection"],
+  topSection: ["topSection", "slider"],
+  slider: ["slider"],
   solutions: ["solutions", "columns"],
   columns: ["columns"],
   howItWorks: ["howItWorks"],
@@ -575,6 +620,7 @@ type NodeDefaultElementType = {
   root: "div";
   header: typeof Header;
   topSection: typeof Section;
+  slider: typeof Slider;
   solutions: typeof Section;
   columns: "div";
   howItWorks: typeof Section;
@@ -643,6 +689,7 @@ export const PlasmicHome = Object.assign(
     // Helper components rendering sub-elements
     header: makeNodeComponent("header"),
     topSection: makeNodeComponent("topSection"),
+    slider: makeNodeComponent("slider"),
     solutions: makeNodeComponent("solutions"),
     columns: makeNodeComponent("columns"),
     howItWorks: makeNodeComponent("howItWorks"),
